@@ -10,6 +10,7 @@
         if (document.getElementById(scriptId) === null) {
             var elem = document.createElement('SCRIPT');
             elem.id = scriptId;
+            elem.type = "text/javascript";
             elem.onload = function() {
               initGist();
             }
